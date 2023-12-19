@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 100% of the viewport height */
+  overflow: hidden;
+  background: url("https://media.giphy.com/media/12zFlnyyTRmIkU/giphy.gif") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#menuButton {
+  display: none; /* Hide the checkbox */
+}
+
+label[for="menuButton"] {
+  background-color: #4caf4f00;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#navbar {
+  display: none;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background-color: #4caf4f00;
+  
+
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Set flex direction to column */
+  padding-left: 10px;
+}
+
+#navbar li {
+  margin-right: 20px;
+  margin-bottom: 10px; /* Adjust spacing between items if needed */
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#content {
+  margin-top: 40px;
+  /* Your existing styles... */
+}
+
+/* Show the navbar when the checkbox is checked */
+#menuButton:checked + label[for="menuButton"] + #navbar {
+  display: block;
+}
+#content {
+  margin-top: 40px;
+  /* Your existing styles... */
+}
+
+/* Show the navbar when the button is clicked */
+#menuButton:checked + #navbar {
+  display: block;
+}
+
+
+/* Show the navbar when the button is clicked */
+#menuButton:checked + #navbar {
+  display: block;
+}
+  
+  h1 {
+    color: #333; /* Dark text color */
+  }
+  
+  #cityInput {
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+  
+  #getWeatherButton {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #getWeatherButton:hover {
+    background-color: #45a049; /* Darker green color on hover */
+  }
+  
+  #weather-info {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #fff; /* White background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+
+  }
+  
+
+
+  
+  #content {
+    margin-top: 50px; /* Adjust margin to make space for the fixed navigation bar */
+    /* Your existing styles... */
+  }
+  
+  #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white; /* Set text color to be visible on top of the GIF */
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+    
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0e0d0d;
+  }
+  /* Add your existing styles here */
+  p {
+    color: #333;
+  }

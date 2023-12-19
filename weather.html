@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <input type="checkbox" id="menuButton">
+  <label for="menuButton">&#9776; Menu</label>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <div id="content">
+    <h1>Weather App</h1>
+
+    <!-- Input field for city name -->
+    <label for="cityInput">Enter City:</label>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+
+    <!-- Use an event listener to call getWeather() when the button is clicked -->
+    <button id="getWeatherButton">Get Weather</button>
+
+    <div id="weather-info">
+      <p>Please Enter your city </p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
